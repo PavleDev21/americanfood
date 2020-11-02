@@ -2,7 +2,7 @@
     position: relative;
     text-align: center;
     padding-top: 75px;
-    padding-bottom: 395px;
+    padding-bottom: 175px;
 }
 .booking-burger-img {
     z-index: 1;
@@ -111,7 +111,7 @@
 
 @include breakpoint(tablet) {
     .booking {
-        padding-bottom: 235px;
+        padding-bottom: 160px;
     }
     .booking-form {
         width: 86%;
@@ -123,7 +123,6 @@
         height: 313px;
     }
     .booking-burger-plate-img {
-        top: 32%;
         height: 465px;
     }
 }
@@ -139,7 +138,7 @@
         top: 155px;
     }
     .booking-burger-plate-img {
-        top: 59%;
+        top: 66%;
         height: 395px;
     }
     .booking-form-name,

@@ -141,9 +141,6 @@ Glyphs list
   font-family: "Montserrat";
   font-weight: 400; }
 
-.main {
-  overflow: hidden; }
-
 .header {
   z-index: 100;
   padding-top: 52px;
@@ -936,15 +933,28 @@ Glyphs list
     background-color: #ffffff;
     transition: 0.4s; }
 
+.our-story-img-wrap {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 65px;
+  margin-bottom: -19px; }
+
 .our-story-burger-img {
   display: block;
   margin: 0 auto;
   height: 303px; }
 
 .our-story-burger-shadow {
+  position: absolute;
+  top: 82%;
+  left: 50%;
+  transform: translateX(-50%);
   display: block;
   margin: 0 auto;
   height: 45px; }
+
+.burger-shadow-center {
+  top: 85%; }
 
 .our-story-side {
   display: block;
@@ -972,7 +982,9 @@ Glyphs list
   .our-story-burger-img {
     height: 200px; }
   .our-story-burger-shadow {
-    height: 30px; } }
+    height: 30px; }
+  .our-story-img-wrap {
+    padding-bottom: 45px; } }
 
 .discover {
   padding: 75px 0; }
@@ -1082,7 +1094,7 @@ Glyphs list
   position: relative;
   text-align: center;
   padding-top: 75px;
-  padding-bottom: 395px; }
+  padding-bottom: 175px; }
 
 .booking-burger-img {
   z-index: 1;
@@ -1191,7 +1203,7 @@ Glyphs list
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .booking {
-    padding-bottom: 235px; }
+    padding-bottom: 160px; }
   .booking-form {
     width: 86%; }
   .booking-bottle-img {
@@ -1199,7 +1211,6 @@ Glyphs list
   .booking-burger-img {
     height: 313px; }
   .booking-burger-plate-img {
-    top: 32%;
     height: 465px; } }
 
 @media only screen and (min-width: 120px) and (max-width: 767px) {
@@ -1210,7 +1221,7 @@ Glyphs list
   .booking-burger-img {
     top: 155px; }
   .booking-burger-plate-img {
-    top: 59%;
+    top: 66%;
     height: 395px; }
   .booking-form-name,
   .booking-form-email,

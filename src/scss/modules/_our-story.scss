@@ -73,15 +73,28 @@
         transition: 0.4s;
     }
 }
+.our-story-img-wrap {
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 65px;
+    margin-bottom: -19px;
+}
 .our-story-burger-img {
     display: block;
     margin: 0 auto;
     height: 303px;
 }
 .our-story-burger-shadow {
+    position: absolute;
+    top: 82%;
+    left: 50%;
+    transform: translateX(-50%);
     display: block;
     margin: 0 auto;
     height: 45px;
+}
+.burger-shadow-center {
+    top: 85%;
 }
 .our-story-side {
     display: block;
@@ -119,5 +132,8 @@
     }
     .our-story-burger-shadow {
         height: 30px;
+    }
+    .our-story-img-wrap {
+        padding-bottom: 45px;
     }
 }
