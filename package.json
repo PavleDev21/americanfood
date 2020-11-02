@@ -1,0 +1,20 @@
+{
+  "name": "americanfood",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "iconfont": "gulp iconfont"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-consolidate": "^0.1.2",
+    "gulp-iconfont": "^5.0.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-sass-lint": "^1.4.0",
+    "underscore": "^1.8.3"
+  },
+  "dependencies": {
+    "gulp-scss-lint": "^1.0.0"
+  }
+}

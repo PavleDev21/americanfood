@@ -1,0 +1,119 @@
+.discover {
+    padding: 75px 0;
+}
+.discover-swiper {
+    box-shadow: 7px 7px 24px -4px $black;
+    font-size: 0;
+    width: 96%;
+    min-height: 491px;
+}
+.swiper-pagination-bullet-active {
+    background-color: $yellow-orange !important;
+}
+.swiper-pagination {
+    text-align: left !important;
+    padding-left: 22px;
+    padding-bottom: 22px;
+}
+.swiper-pagination-bullet {
+    height: 17px !important;
+    width: 17px !important;
+}
+.discover-text-container {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    padding-top: 24px;
+    padding-left: 24px;
+}
+.discover-title {
+    text-transform: uppercase;
+    color: $mine-shaft;
+    display: block;
+    font-family: $font2;
+    font-size: 29px;
+    line-height: 32px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+.discover-subtitle {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: $cedar;
+    display: block;
+    font-size: 42px;
+    line-height: 45px;
+    font-family: $font3;
+}
+.discover-text {
+    width: 90%;
+    color: $mine-shaft;
+    font-size: 21px;
+    line-height: 33px;
+    font-weight: 400;
+}
+.discover-image-container {
+    padding: 24px 24px 24px 0;
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+}
+.discover-img {
+    @extend %bc-img;
+    height: 440px;
+}
+
+@include breakpoint(tablet) {
+    .discover-swiper {
+        min-height: 416px;
+    }
+    .discover-title {
+        font-size: 26px;
+        line-height: 26px;
+    }
+    .discover-subtitle {
+        font-size: 27px;
+        margin-bottom: 5px;
+    }
+    .discover-text {
+        font-size: 17px;
+        line-height: 26px;
+    }
+    .discover-img {
+        height: 368px;
+    }
+}
+
+@include breakpoint(phone) {
+    .discover-swiper {
+        min-height: 0;
+    }
+    .swiper-pagination {
+        padding-left: 15px;
+        padding-bottom: 15px;
+    }
+    .discover-text-container {
+        text-align: center;
+        display: block;
+        width: 100%;
+        padding-left: 0;
+        padding-bottom: 10px;
+        padding-top: 30px;
+    }
+    .discover-title {
+        font-size: 26px;
+        line-height: 26px;
+    }
+    .discover-subtitle {
+        font-size: 27px;
+        margin-bottom: 5px;
+    }
+    .discover-text {
+        margin: 0 auto;
+        font-size: 17px;
+        line-height: 26px;
+    }
+    .discover-img {
+        display: none;
+    }
+}

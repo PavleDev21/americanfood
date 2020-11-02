@@ -1,0 +1,123 @@
+.our-story {
+    padding: 75px 0;
+    .wrapper {
+        max-width: 1550px;
+    }
+}
+.our-story-text {
+    margin-bottom: 59px;
+    text-align: center;
+}
+.our-story-title {
+    margin-bottom: 15px;
+    color: $cedar;
+    text-transform: uppercase;
+    font-family: $font3;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 55px;
+}
+.our-story-subtitle {
+    width: 80%;
+    margin: 0 auto;
+    color: $cedar;
+    font-size: 17px;
+    line-height: 29px;
+    font-weight: 400;
+}
+.our-story-items {
+    font-size: 0;
+}
+.our-story-item {
+    text-align: center;
+    display: inline-block;
+    width: 33.33%;
+    vertical-align: bottom;
+}
+.our-story-item-title {
+    margin-top: 25px;
+    margin-bottom: 12px;
+    font-family: $font2;
+    color: $cedar;
+    text-transform: uppercase;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 40px;
+}
+.our-story-item-subtitle {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 55px;
+    color: $cedar;
+    display: block;
+    font-size: 17px;
+    line-height: 21px;
+    font-weight: 400;
+}
+.our-story-link {
+    border: 1px solid transparent;
+    padding: 18px 35px 15px 39px;
+    color: $white;
+    background-color: $cardinal;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: $font3;
+    font-size: 17px;
+    line-height: 21px;
+    font-weight: 400;
+    transition: 0.4s;
+    &:hover {
+        border: 1px solid $cardinal;
+        color: $cardinal;
+        background-color: $white;
+        transition: 0.4s;
+    }
+}
+.our-story-burger-img {
+    display: block;
+    margin: 0 auto;
+    height: 303px;
+}
+.our-story-burger-shadow {
+    display: block;
+    margin: 0 auto;
+    height: 45px;
+}
+.our-story-side {
+    display: block;
+    margin: 0 auto;
+    height: 273px;
+}
+
+@include breakpoint(tablet) {
+    .our-story-items {
+        text-align: center;
+    }
+    .our-story-item {
+        width: 50%;
+        margin-bottom: 75px;
+    }
+    .our-story-burger-img {
+        height: 273px;
+    }
+    .our-story-burger-shadow {
+        height: 40px;
+    }
+}
+
+@include breakpoint(phone) {
+    .our-story-items {
+        text-align: center;
+    }
+    .our-story-item {
+        margin-bottom: 75px;
+        display: block;
+        width: 100%;
+    }
+    .our-story-burger-img {
+        height: 200px;
+    }
+    .our-story-burger-shadow {
+        height: 30px;
+    }
+}

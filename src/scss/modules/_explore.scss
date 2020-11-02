@@ -1,0 +1,103 @@
+.explore {
+    text-align: center;
+    padding-top: 78px;
+    padding-bottom: 78px;
+}
+.explore-images {
+    text-align: left;
+    padding-bottom: 82px;
+    font-size: 0;
+}
+.right-wrap {
+    padding: 0 15px 0 54px;
+}
+.left-wrap {
+    margin: -35px 0;
+    padding: 0 42px 0 27px;
+}
+.big-explore-wrap {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+}
+.big-explore {
+    border-radius: 10px;
+    min-height: 420px;
+    @extend %bc-img;
+    cursor: pointer;
+}
+.small-explore {
+    border-radius: 10px;
+    margin: 35px 0;
+    display: block;
+    width: 100%;
+    min-height: 192px;
+    @extend %bc-img;
+    cursor: pointer;
+}
+.explore-title {
+    padding-top: 29px;
+    padding-left: 25px;
+    letter-spacing: -0.3px;
+    color: $white;
+    font-size: 42px;
+    line-height: 42px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: $font2;
+    display: block;
+}
+.explore-top-title {
+    font-size: 25px;
+    line-height: 27px;
+    display: block;
+}
+.explore-sub-title {
+    display: block;
+    margin-top: -5px;
+}
+.explore-link {
+    padding: 8px 22px;
+    text-decoration: none;
+    background-color: $yellow-orange;
+    color: $cedar;
+    font-family: $font2;
+    font-size: 25px;
+    line-height: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.4s;
+    &:hover {
+        background-color: $cedar;
+        color: $yellow-orange;
+        transition: 0.4s;
+    }
+}
+
+@include breakpoint(tablet) {
+    .big-explore-wrap {
+        display: block;
+        width: 100%;
+        padding: 0 35px;
+    }
+    .big-explore {
+        min-height: 192px;
+    }
+    .right-wrap {
+        padding-bottom: 35px;
+    }
+}
+
+@include breakpoint(phone) {
+    .big-explore-wrap {
+        display: block;
+        width: 100%;
+        padding: 0 35px;
+    }
+    .big-explore {
+        min-height: 192px;
+    }
+    .right-wrap {
+        padding-bottom: 35px;
+    }
+}

@@ -1,0 +1,253 @@
+.banner {
+    height: 100vh;
+    overflow: hidden;
+    //padding-top: 285px;
+    padding-top: 35vh;
+    //min-height: 825px;
+    @extend %bc-img;
+    .wrapper {
+        font-size: 0;
+    }
+}
+.banner-text {
+    position: relative;
+    z-index: 50;
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    padding-left: 7px;
+}
+.banner-subtitle-dashed {
+    color: $cedar;
+    margin-bottom: 13px;
+    display: inline-block;
+    padding: 8px 12px;
+    border: 2px dashed $cedar;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 400;
+    color: $cedar;
+    text-transform: uppercase;
+    font-family: $font2;
+}
+.banner-title {
+    text-shadow: 2px 2px $white;
+    z-index: 10;
+    position: relative;
+    color: $cedar;
+    text-transform: uppercase;
+    font-family: $font3;
+    font-size: 114px;
+    line-height: 126px;
+    font-weight: 400;
+}
+.banner-subtitle {
+    text-shadow: 2px 2px $white;
+    z-index: 10;
+    position: relative;
+    display: inline-block;
+    color: $cedar;
+    text-transform: uppercase;
+    font-family: $font3;
+    font-size: 56px;
+    line-height: 64px;
+    font-weight: 400;
+}
+.banner-images {
+    padding-top: 52px;
+    padding-left: 95px;
+    position: relative;
+    vertical-align: top;
+    display: inline-block;
+    width: 50%;
+}
+.burger-imgs {
+    z-index: 10;
+    position: relative;
+    padding-bottom: 87%;
+}
+.burger-img-src {
+    @extend %bc-img;
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 74%;
+    width: 74%;
+}
+.drinks-img {
+    z-index: 3;
+    position: absolute;
+    padding-bottom: 280%;
+    width: 100%;
+    top: -25%;
+    left: 56%;
+}
+.drinks-img-src {
+    @extend %bc-img;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 30%;
+}
+.fries-img {
+    z-index: 3;
+    position: absolute;
+    padding-bottom: 111%;
+    width: 100%;
+    top: -13%;
+    left: -23%;
+}
+.fries-img-src {
+    @extend %bc-img;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 55%;
+    height: 55%;
+}
+.burger-shadow {
+    z-index: 2;
+    position: absolute;
+    padding-bottom: 10%;
+    width: 100%;
+    bottom: 17%;
+    left: -15%;
+}
+.burger-shadow-src {
+    @extend %bc-img;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.drinks-shadow {
+    z-index: 2;
+    position: absolute;
+    padding-bottom: 14%;
+    width: 100%;
+    bottom: 19%;
+    left: 15%;
+}
+.drinks-shadow-src {
+    @extend %bc-img;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.glow-img {
+    z-index: 1;
+    position: absolute;
+    padding-bottom: 102%;
+    width: 100%;
+    top: 32%;
+    left: 32%;
+    transform: translate(-50%, -50%);
+}
+.glow-src {
+    @extend %bc-img;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.buger-price {
+    color: $white;
+    border-radius: 50%;
+    background-color: $cardinal;
+    padding: 39px;
+    padding-bottom: 63px;
+    text-align: center;
+    font-family: $font2;
+    position: absolute;
+    bottom: 18%;
+    left: -19%;
+    z-index: 11;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 70px;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 86%;
+        height: 86%;
+        border-radius: 50%;
+        border: 2px dashed $white;
+    }
+}
+.price-sub {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 700;
+}
+.price-subtitle {
+    display: block;
+    position: absolute;
+    bottom: 31px;
+    left: 43px;
+    font-weight: 700;
+    font-size: 33px;
+    line-height: 33px;
+    letter-spacing: 12px;
+}
+
+@include breakpoint(tablet) {
+    .banner-text {
+        padding-left: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -115%);
+        text-align: center;
+        width: 100%;
+        display: block;
+    }
+    .banner-images {
+        display: block;
+        width: 100%;
+        padding-top: 183px;
+        padding-left: 144px;
+    }
+    .buger-price {
+        left: -13%;
+    }
+}
+
+@include breakpoint(phone) {
+    .banner-text {
+        padding-left: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -65%);
+        text-align: center;
+        width: 100%;
+        display: block;
+    }
+    .banner-images {
+        display: block;
+        width: 100%;
+        padding-left: 56px;
+        padding-top: 25vh;
+    }
+    .buger-price {
+        display: none;
+    }
+    .banner-subtitle-dashed {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .banner-title {
+        font-size: 64px;
+        line-height: 82px;
+    }
+}
+
+// NAMESTI BURGER PRICE NA MOBILNOM!!!!

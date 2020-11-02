@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../fonts/Montserrat-Regular.eot');
+    src: url('../../fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../../src/fonts/Montserrat-Regular.woff2') format('woff2'),
+        url('../../src/fonts/Montserrat-Regular.woff') format('woff'),
+        url('../../src/fonts/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../src/fonts/Montserrat-Bold.eot');
+    src: url('../../src/fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../../src/fonts/Montserrat-Bold.woff2') format('woff2'),
+        url('../../src/fonts/Montserrat-Bold.woff') format('woff'),
+        url('../../src/fonts/Montserrat-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../../src/fonts/BebasNeue-Regular.eot');
+    src: url('../../src/fonts/BebasNeue-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../../src/fonts/BebasNeue-Regular.woff2') format('woff2'),
+        url('../../src/fonts/BebasNeue-Regular.woff') format('woff'),
+        url('../../src/fonts/BebasNeue-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alfa Slab One';
+    src: url('../../src/fonts/AlfaSlabOne-Regular.eot');
+    src: url('../../src/fonts/AlfaSlabOne-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../../src/fonts/AlfaSlabOne-Regular.woff2') format('woff2'),
+        url('../../src/fonts/AlfaSlabOne-Regular.woff') format('woff'),
+        url('../../src/fonts/AlfaSlabOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
